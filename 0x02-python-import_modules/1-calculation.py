@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-if __name__ = "__main__":
+if __name__ == "__main__":
     """Print functions for div, mul, add and sub"""
     from calculator_1 import *
 
