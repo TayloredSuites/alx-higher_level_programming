@@ -2,4 +2,5 @@
 
 def print_last_digit(number):
     digit = number % 10
-    return digit
+    answer = print("{:02}".format(digit))
+    return answer
