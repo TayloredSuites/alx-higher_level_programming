@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-if __name__ = "__main__":
+if __name__ == "__main__":
     import sys
+
     num_args = len(sys.argv)
 
     if num_args == 0:
