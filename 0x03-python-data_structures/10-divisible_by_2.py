@@ -6,17 +6,14 @@ def divisible_by_2(my_list=[]):
     new_list = []
 
     for i in my_list:
-        if i % 2 == 0:
-            new_list.append(True)
+        if i % 2 != 0 and i == 0:
+            new_list.append(False)
             """ print("{} is divisible by 2".format(i))
             truthful = [True for i in my_list if i % 2 == 0]
             print(truthful)
             even_numbers = list(filter(lambda x: x % 2 == 0, my_list)) """
-        elif:
-            i = 0:
-                new_list.append(False)
 
         else:
-            new_list.append(False)
+            new_list.append(True)
 
     return new_list
