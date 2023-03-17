@@ -3,5 +3,6 @@
 def square_matrix_simple(matrix=[]):
     """ Computes the square value of all integers of a matrix """
 
-    for i in matrix:
+    matrix_copy = matrix.copy()
+    for i in matrix_copy:
         print(list(map(lambda x: x*x, i)))
