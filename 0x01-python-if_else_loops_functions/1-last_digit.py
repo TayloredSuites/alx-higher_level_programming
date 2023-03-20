@@ -11,7 +11,7 @@ if number < 0:
         number, last_dgt))
 
 if last_dgt > 5:
-        print("Last digit of {} is {} and is greater than 5".format(
+    print("Last digit of {} is {} and is greater than 5".format(
             number, last_dgt))
 elif last_dgt == 0:
     print("Last digit of {} is {} and is 0".format(number, last_dgt))
