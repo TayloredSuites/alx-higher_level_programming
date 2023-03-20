@@ -3,10 +3,10 @@
 import random
 
 number = random.randint(-10000, 10000)
-last_dgt = number % 10
+last_dgt = abs(number) % 10
 
 if number < 0:
-    last_dgt = number % -10
+    last_dgt = -last_dgt
     print("Last digit of {} is {} and is less than 6 and not 0".format(
         number, last_dgt))
 if last_dgt > 5:
