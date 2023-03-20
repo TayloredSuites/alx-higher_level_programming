@@ -1,4 +1,3 @@
-#!/usr//bin/python3
-
-for i in range(ord('A'), ord('Z')+1):
-    print chr(i),
+#!/usr/bin/python3
+import string
+print(string.ascii_uppercase[:25]
