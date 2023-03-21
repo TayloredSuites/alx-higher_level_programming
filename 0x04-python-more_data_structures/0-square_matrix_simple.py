@@ -6,4 +6,4 @@ def square_matrix_simple(matrix=[]):
     matrix_copy = matrix.copy()
     for i in matrix_copy:
         print(list(map(lambda x: x*x, i))) """
-        [list(map(lambda x: x * x, row)) for row in matrix]
+    [list(map(lambda x: x * x, row)) for row in matrix]
