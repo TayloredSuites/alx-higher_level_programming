@@ -4,7 +4,7 @@ Introduction to Python and other sentient languages. Refresher module.
 
 ## About the Repository
 
-What is contained in here are Python projects designed to give a deeper understanding of the language and introduce data structures and algorithms in due time. As it progresses more projects will be added to it in completion of tasks assigned daily.
+What is contained in here are Python projects designed to give a deeper understanding of the language and introduce data structures and algorithms in due time. As it progresses more projects will be added to it in completion of tasks assigned daily. For now, it's Python basics.
 
 ## Limitations
 
