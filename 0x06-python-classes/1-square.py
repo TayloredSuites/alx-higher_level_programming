@@ -2,6 +2,7 @@
 
 """ Module creates a private attribute size """
 
+
 class Square:
     """ Defines a square based on 0-square.py
     and initializes it to size
