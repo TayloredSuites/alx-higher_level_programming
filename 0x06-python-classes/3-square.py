@@ -3,6 +3,7 @@
 """ No module importation allowed
 """
 
+
 class Square:
     """ Defines a square based on 2-square.py
     """
@@ -23,7 +24,6 @@ class Square:
             raise ValueError("size must be >= 0")
         else:
             self.__size = size
-
 
     def area(self):
         """ Class fuction to return current square area
