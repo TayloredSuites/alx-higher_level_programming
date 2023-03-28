@@ -1,12 +1,10 @@
 #!/usr/bin/python3
 
-""" (python3 -c 'print(__import__("my_module").__doc__)')
+""" No module imports allowed
 """
 
-class Square:
-    """ (python3 -c 'print(__import__("my_module").MyClass.__doc__)')
 
-    Empty class is initialized
-    """
+class Square:
+    """ Empty class is initialized  """
 
     pass
