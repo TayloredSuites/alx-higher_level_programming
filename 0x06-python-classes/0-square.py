@@ -1,9 +1,12 @@
 #!/usr/bin/python3
 
-""" No module importation allowed
+""" (python3 -c 'print(__import__("my_module").__doc__)')
 """
 
 class Square:
-    """ Empty class that defines a square """
+    """ (python3 -c 'print(__import__("my_module").MyClass.__doc__)')
+
+    Empty class is initialized
+    """
 
     pass
