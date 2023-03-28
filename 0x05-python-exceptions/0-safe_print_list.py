@@ -7,3 +7,5 @@ def safe_print_list(my_list=[], x=0):
     except IndexError as e:
         e.add_note("Index less than 1, out of bounds!")
         print(f'Caught {type(e)}: e')
+    else:
+        return my_list[i]
