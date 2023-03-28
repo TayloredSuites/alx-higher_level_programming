@@ -29,4 +29,4 @@ class Square:
         """ Class fuction to return current square area
         """
 
-        print('Area: {:d}'.format(${self.__size ** 2}))
+        return self.__size * self.__size
