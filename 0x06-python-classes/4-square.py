@@ -25,12 +25,6 @@ class Square:
         else:
             self.__size = size
 
-    def area(self):
-        """ Class function to return current square area
-        """
-
-        return self.__size * self.__size
-
     @property
     def size(self):
         """ A property ot retrieve private instance of self
@@ -40,12 +34,15 @@ class Square:
 
     @size.setter
     def size(self, value):
-        """ Property setter to set the value of the square size
-        """
-
         if type(size) is not int:
             raise TypeError("size must be an integer")
         elif size < 0:
             raise ValueError("size must be >= 0")
         else:
             self.__size = value
+
+    def area(self):
+        """ Class function to return current square area
+        """
+
+        return self.__size * self.__size
