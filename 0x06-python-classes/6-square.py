@@ -41,9 +41,9 @@ class Square:
         """ Property setter to set the value of the square size
         """
 
-        if type(size) is not int:
+        if type(value) is not int:
             raise TypeError("size must be an integer")
-        elif size < 0:
+        elif value < 0:
             raise ValueError("size must be >= 0")
         else:
             self.__size = value
@@ -52,7 +52,7 @@ class Square:
         """ Prints to stdout the square with chatacter '#'
         """
 
-        if size == 0:
+        if value == 0:
             print()
         else:
             for i in range(self.__size):
