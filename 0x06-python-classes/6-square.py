@@ -1,6 +1,6 @@
-#!/bin/usr/python3
+#!/usr/bin/python3
 
-""" No module importation allowed
+""" No module imports allowed
 """
 
 
@@ -56,5 +56,5 @@ class Square:
             print()
         else:
             for i in range(self.__size):
-                for j in range in range(self.__size):
-                    print('#', end="")
+                [print'#', end="") for j in range(self.__size)]
+                print()
