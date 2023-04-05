@@ -47,5 +47,8 @@ def matrix_divided(matrix, div):
                     integers/floats")
     except (ZeroDivisionError, TypeError):
         raise (SeroDivisionError, TypeError)
-                
+    else:
+        for i in matrix:
+            divided_matrix = print(list(map(lambda x: x/2, i)))
 
+            return divided_matrix
