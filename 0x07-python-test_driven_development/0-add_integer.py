@@ -3,9 +3,10 @@
 """ No module import allowed
 """
 
+
 def add_integer(a, b=98):
     """ A function that adds two integers
-    
+
     Note:
         a and b must be first casted to integers if they are float
         a and b must be integers or floats, otherwise raise a TypeError
@@ -22,4 +23,3 @@ def add_integer(a, b=98):
         raise TypeError("b must be an integer")
     else:
         return int(a) + int(b)
-
