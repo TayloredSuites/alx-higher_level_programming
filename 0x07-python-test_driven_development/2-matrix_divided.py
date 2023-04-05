@@ -37,7 +37,7 @@ def matrix_divided(matrix, div):
         elif div == 0:
             raise ZeroDivisionError("division by zero")
         for i in matrix:
-            print(list(map(lambda x: x / 3, i)))
+            print(list(map(lambda x: x / div, i)))
             if len(i) != len(i):
                 raise TypeError("Each row of the matrix must have the same
                 size")
@@ -49,6 +49,6 @@ def matrix_divided(matrix, div):
         raise (SeroDivisionError, TypeError)
     else:
         for i in matrix:
-            divided_matrix = print(list(map(lambda x: x/2, i)))
+            divided_matrix = print(list(map(lambda x: x /div, i)))
 
             return divided_matrix
