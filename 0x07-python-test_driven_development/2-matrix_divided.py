@@ -29,6 +29,9 @@ def matrix_divided(matrix, div):
     Args:
         matrix (list): a list of integers or floars
         div (int/float): the denominator to each matrix element
+
+    Return:
+        matrix elements after division to 2 decimal places
     """
 
     try:
@@ -46,9 +49,10 @@ def matrix_divided(matrix, div):
                     raise TypeError("matrix must be a matrix (list of lists) of
                     integers/floats")
     except (ZeroDivisionError, TypeError):
-        raise (SeroDivisionError, TypeError)
+        raise (ZeroDivisionError, TypeError)
     else:
         for i in matrix:
-            divided_matrix = print(list(map(lambda x: x /div, i)))
+            divided_matrix = list(map(lambda x: x /div, i)))
+            rounded_off = print("%.2f" % divided_matrix)
 
-            return divided_matrix
+            return rounded_off
