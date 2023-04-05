@@ -1,0 +1,39 @@
+How to Use 5-text_indentation.txt
+
+This library is very simple, since it only has one function called
+``text_indentation()``.
+
+Normal Characters Accepted
+==========================
+
+``text_indentation()`` returns two newlines whenever forbidden characters are
+encountered. Text accepted must be a string. Once it is not a fullstop,
+colon or question mark, expect the below behaviour
+
+::
+
+    >>> from 5-text_indentation import text_indentation
+    >>> text = "Lorem ipsum dolor sit amet, consectetur adipiscing"
+    >>> text_indentation(text)
+    Lorem ipsum dolor sit amet, consectetur adipiscing
+
+    >>> text = "What is going on Gandalf? Let us go, or else. Yikes\!"
+    >>> text_indentation(text)
+    What is going on Gandalf?
+
+    Let us go, or else.
+
+    Yikes!
+
+Non-text Entry
+====================
+
+Because ``text_indentation()`` is defined on strings only. It will not pick out
+the three special characters if the input is not a string. It will raise a
+TypeError in such instances
+
+::
+
+    >>> text = 34289384
+    >>> text_indentation(text)
+    TypeError: text must be a string
