@@ -15,6 +15,8 @@ def add_integer(a, b=98):
     Args:
         a (int): one of the two integers to the added
         b (int): the other of the two integers local scope of 89
+
+    Return: sum of two ints a and b
     """
 
     if type(a) is not int or type(a) is not float:
