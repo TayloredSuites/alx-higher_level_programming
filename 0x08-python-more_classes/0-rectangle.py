@@ -2,6 +2,7 @@
 
 """ No module importation allowed """
 
+
 class Rectangle:
     """ An empty class that defines a rectangle
 
