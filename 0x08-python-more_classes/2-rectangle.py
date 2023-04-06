@@ -18,18 +18,6 @@ class Rectangle:
         self.width = width
         self.height = height
 
-        def area(self):
-            """ Class function to return current rectangle area
-            """
-
-            return self.__width * self.__height
-
-        def perimeter(self):
-            """ Class function to return current perimeter of rectangle
-            """
-
-            return (2 * self.__width) + (2 * self.__height)
-
         @property
         def width(self):
             """ A property to retrieve private instance of self
@@ -71,3 +59,16 @@ class Rectangle:
                 raise ValueError("height must be >= 0")
             else:
                 self.__height = value
+
+        def area(elf):
+            """ Class function to return current rectangle area
+            """
+
+            return self.__width * self.__height
+
+        def perimeter(self):
+
+            """ Class function to return current perimeter of rectangle
+            """
+
+            return (2 * self.__width) + (2 * self.__height) 
