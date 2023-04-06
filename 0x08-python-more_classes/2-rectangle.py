@@ -71,4 +71,4 @@ class Rectangle:
             """ Class function to return current perimeter of rectangle
             """
 
-            return (2 * self.__width) + (2 * self.__height) 
+            return (2 * self.__width) + (2 * self.__height)
