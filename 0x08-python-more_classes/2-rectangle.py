@@ -64,11 +64,11 @@ class Rectangle:
             """ Class function to return current rectangle area
             """
 
-            return self.__width * self.__height
+            return self.width * self.height
 
         def perimeter(self):
 
             """ Class function to return current perimeter of rectangle
             """
 
-            return (2 * self.__width) + (2 * self.__height)
+            return (2 * self.width) + (2 * self.height)
