@@ -14,12 +14,12 @@ For numbers, pos or neg, that value is equivalent to using the ``/`` operator.
 
 ::
 
-    >>> from 2-matrix_divided import matrix_divided
+    >>> matrix_divided = __import__("2-matrix_divided").matrix_divided
     >>> matrix = [
     [1, 2, 3],
     [4, 5, 6]
     ]
-    >>> my_function(matrix)
+    >>> matrix_divided(matrix)
     [[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
     [[1, 2, 3], [4, 5, 6]]
 
@@ -27,7 +27,7 @@ It also works with floating-point values.
 
 ::
 
-    >>> my_function(float(matrix))
+    >>> matrix_divided(float(matrix))
     [[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
     [[1, 2, 3], [4, 5, 6]]
 
@@ -44,7 +44,7 @@ string, a list, or a tuple. However, it will raise a TypeError
     [1, 2, "Lizards"],
     [4, "Potahtoes", 6]
     ]
-    >>> my_function(matrix)
+    >>> matrix_divded(matrix)
     TypeError: div must be a number
 
 Different Row Lengths
@@ -56,7 +56,7 @@ Because ``/`` is not defined on defined on rows of differing length
     [1, 2, 3, 7],
     [4, 5, 6]
     ]
-    >>> my_function(matrix)
+    >>> matrix_divided(matrix)
     TypeError: Each row of the matrix must have the same size
 
 Zero Division
@@ -71,6 +71,6 @@ zeroDivisionError
     [1, 2, 3],
     [4, 5, 0]
     ]
-    >>> my_function(matrix)
+    >>> matrix_divided(matrix)
     ZeroDivisionError: division by zero
 (END)
