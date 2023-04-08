@@ -49,9 +49,7 @@ def matrix_divided(matrix, div):
                 if type(j) is not int or type(j) is not float:
                     raise TypeError("matrix must be a matrix(list of lists) of\
                             integers/floats")
-    except (ZeroDivisionError, TypeError):
-        raise (ZeroDivisionError, TypeError)
-    else:
+    finally:
         for i in matrix:
             divided_matrix = list(map(lambda x: x / div, i))
             rounded_off = print("%.2f" % divided_matrix)
