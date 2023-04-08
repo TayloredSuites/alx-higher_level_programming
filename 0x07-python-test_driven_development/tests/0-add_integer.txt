@@ -13,17 +13,17 @@ that value is equivalent to using the ``+`` operator.
 
 ::
 
-    >>> my_function = __import__('0-add_integer').add_integer
-    >>> my_function(2, 3)
+    >>> add_integer = __import__("0-add_integer").add_integer
+    >>> add_integer(2, 3)
     5
-    >>> my_function(1, -2)
+    >>> add_integer(1, -2)
     -1
 
 It also works with floating-point values
 
 ::
 
-    >>> my_function(2.0, -3)
+    >>> add_integer(2.0, -3)
     -1.0
 
 
@@ -36,8 +36,8 @@ string, a list, or a tuple. However, it will raise a TypeError
 
 ::
 
-    >>> my_function('a', 3)
+    >>> add_integer('a', 3)
     TypeError: a must be an integer
 
-    >>> my_function(6.2, 'Hello')
+    >>> add_integer(6.2, 'Hello')
     TypeError: b must be an integer
