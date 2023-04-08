@@ -16,6 +16,8 @@ that value is equivalent to using the ``+`` operator.
     >>> from 0-add_integer import add_integer
     >>> my_function(2, 3)
     5
+    >>> my_function(1, -2)
+    -1
 
 It also works with floating-point values
 
@@ -23,11 +25,7 @@ It also works with floating-point values
 
     >>> my_function(2.0, -3)
     -1.0
-And regular negative numbers
-::
 
-    >>> my_function(1, -2)
-    -1
 
 Non-Numbers
 ===========
