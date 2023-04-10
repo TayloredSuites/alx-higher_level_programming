@@ -37,6 +37,15 @@ string, a list, or a tuple. However, it will raise a TypeError
 ::
 
     >>> add_integer('Hag', 3)
+    Traceback (most recent call last):
+        File "/usr/lib/python3.8/doctest.py", line 1336, in __run
+        exec(compile(example.source, filename, "single",
+      File "
+        add_integer('Hag', 3)
+      File "/tmp/correction/1140985379941512867367003646931981333693_5/246/148\
+      028/0x07-python-test_driven_development/0-add_integer.py", line 23, in\
+      add_integer
+        raise TypeError("a must be an integer")
     TypeError: a must be an integer
 
     >>> add_integer(6.2, 'Hello')
