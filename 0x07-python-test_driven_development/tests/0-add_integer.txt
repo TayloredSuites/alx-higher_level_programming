@@ -24,7 +24,7 @@ It also works with floating-point values
 ::
 
     >>> add_integer(2.0, -3)
-    -1.0
+    -1
 
 
 Non-Numbers
@@ -36,7 +36,7 @@ string, a list, or a tuple. However, it will raise a TypeError
 
 ::
 
-    >>> add_integer('a', 3)
+    >>> add_integer('Hag', 3)
     TypeError: a must be an integer
 
     >>> add_integer(6.2, 'Hello')
