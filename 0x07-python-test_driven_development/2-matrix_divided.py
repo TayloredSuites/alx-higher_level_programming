@@ -47,5 +47,5 @@ def matrix_divided(matrix, div):
             raise TypeErrot("div must be a number")
         elif len(i) != same_length:
             raise TypeError("Each row of the matrix must have the same size")
-
-    return print(list(map(lambda x: round(x / div, 2), i)
+        else:
+            return print(list(map(lambda x: round(x / div, 2), i)
