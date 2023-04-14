@@ -35,25 +35,17 @@ def matrix_divided(matrix, div):
         matrix elements after division to 2 decimal places
     """
 
+    same_length = len(matrix[0])
+
+    if type(matrix) != list and (type(matrix) != float | int):
+        raise TypeError("matrix must be a matrix (list of lists) of\
+                integers/floats")
     for i in matrix:
-        if type(i) != list and type(i) != float:
-            raise TypeError('matrix must be a matrix (list of lists) of\
-                    integers/floats')
-        if type(i) != list and type(i) != int:
-            raise TypeError('matrix must be a matrix (list of lists) of\
-                    integers/floats')
-        if len(i) != len(i):
-            raise TypeError('Each row of the matrix must have the same size')
-            for j in i:
-                if type(j) != int & type(j) != float:
-                    raise TypeError('matrix must be a matrix (list of lists)\
-                            of integers/floats')
+        if div == 0:
+            raise ZeroDivisionError("division by zero")
+        elif type(div) != float and type(div) != int:
+            raise TypeErrot("div must be a number")
+        elif len(i) != same_length:
+            raise TypeError("Each row of the matrix must have the same size")
 
-            else:
-                if type(div) != int & type(div) != float:
-                    raise TypeError('div must be a number')
-                    if div == 0:
-                        raise TypeError('division by zero')
-
-                    else:
-                        return round(list(map(lambda x: x / 2, i)))
+    return print(list(map(lambda x: round(x / div, 2), i)
